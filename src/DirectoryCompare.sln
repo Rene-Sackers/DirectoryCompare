@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompare", "Directo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompareEngine", "DirectoryCompareEngine\DirectoryCompareEngine.csproj", "{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompareEngine.Tests", "DirectoryCompareEngine.Tests\DirectoryCompareEngine.Tests.csproj", "{91F7E080-C777-4FF2-9CB5-65D7654B5CB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91F7E080-C777-4FF2-9CB5-65D7654B5CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91F7E080-C777-4FF2-9CB5-65D7654B5CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91F7E080-C777-4FF2-9CB5-65D7654B5CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91F7E080-C777-4FF2-9CB5-65D7654B5CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
