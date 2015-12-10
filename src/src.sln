@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompare", "DirectoryCompare\DirectoryCompare.csproj", "{656A465D-90A2-4986-9B30-D98782139221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryCompareEngine", "DirectoryCompareEngine\DirectoryCompareEngine.csproj", "{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{656A465D-90A2-4986-9B30-D98782139221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656A465D-90A2-4986-9B30-D98782139221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656A465D-90A2-4986-9B30-D98782139221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656A465D-90A2-4986-9B30-D98782139221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
