@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Abstracts\ComparisonInstanceAbastract.cs" />
+    <Compile Include="Models\Enums\ItemSyncStates.cs" />
+    <Compile Include="Models\Interfaces\IComparisonItem.cs" />
+    <Compile Include="Models\Interfaces\IComparisonItemContainer.cs" />
+    <Compile Include="Models\Interfaces\IComparisonItemFile.cs" />
+    <Compile Include="Models\Interfaces\IComparisonSideProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,10 +61,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\Abstracts\" />
-    <Folder Include="Models\Enums\" />
-    <Folder Include="Models\Implementations\" />
-    <Folder Include="Models\Interfaces\" />
+    <Folder Include="Models\Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.1.29.2\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
