@@ -9,7 +9,7 @@ namespace DirectoryCompareEngine.Services.Files
 
         public string Name { get; set; }
 
-        public ulong Size { get; set; }
+        public long Size { get; set; }
 
         public string RelativePath { get; set; }
 
@@ -18,7 +18,7 @@ namespace DirectoryCompareEngine.Services.Files
         public IoFile(
             bool exists,
             string name,
-            ulong size,
+            long size,
             string relativePath,
             string absolutePath
             )

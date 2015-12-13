@@ -1,5 +1,6 @@
 ﻿using System;
 using Autofac;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace DirectoryCompareEngine.Tests
 {

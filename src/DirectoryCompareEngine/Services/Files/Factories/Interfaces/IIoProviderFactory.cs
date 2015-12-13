@@ -9,6 +9,6 @@ namespace DirectoryCompareEngine.Services.Files.Factories.Interfaces
 {
     public interface IIoProviderFactory
     {
-        IIoProvider Create(string absolutePath);
+        IIoProvider Create(string rootAbsolutePath);
     }
 }

@@ -2,7 +2,7 @@
 {
     public interface IIoFile  : IIoItem
 	{
-		ulong Size { get;set; }
+		long Size { get;set; }
 
 	}
 }
