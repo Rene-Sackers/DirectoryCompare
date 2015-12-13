@@ -57,15 +57,15 @@ namespace DirectoryCompareEngine.Tests.Services.Files
             var provider = factory.Create(rootAbsolutePath);
 
             var subItems = provider.GetDirectoryItems(rootAbsolutePath).ToArray();
-
+            
             var subDirectoryAbsolutePaths = Directory.GetDirectories(rootAbsolutePath);
             var subFileAbsolutePaths = Directory.GetFiles(rootAbsolutePath);
 
             foreach (var subDirectoryAbsolutePath in subDirectoryAbsolutePaths)
-                Debug.Assert(subItems.OfType<IIoDirectory>().Any(ioDirectory => ioDirectory.AbsolutePath == subDirectoryAbsolutePath));
+                Assert.IsTrue(subItems.OfType<IIoDirectory>().Any(ioDirectory => ioDirectory.AbsolutePath == subDirectoryAbsolutePath));
 
             foreach (var subFileAbsolutePath in subFileAbsolutePaths)
-                Debug.Assert(subItems.OfType<IIoFile>().Any(ioFile => ioFile.AbsolutePath == subFileAbsolutePath));
+                Assert.IsTrue(subItems.OfType<IIoFile>().Any(ioFile => ioFile.AbsolutePath == subFileAbsolutePath));
         }
     }
 }
