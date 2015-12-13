@@ -31,35 +31,47 @@ namespace DirectoryCompareEngine.Services.Files
                 throw new InvalidOperationException($"The given local absolute \"{absolutePath}\" does not exist.");
 
             var directoryInfo = new DirectoryInfo(absolutePath);
-            var ioFileItems = directoryInfo
-                .GetFiles()
-                .ToList()
-                .Select(
-                    subFileInfo =>
-                    new IoFile(
-                        true,
-                        subFileInfo.Name,
-                        subFileInfo.Length,
-                        GetRelativePath(subFileInfo.FullName),
-                        subFileInfo.FullName
+
+            var subItems = new List<IIoItem>();
+            try
+            {
+                subItems.AddRange(
+                    directoryInfo
+                    .GetFiles()
+                    .ToList()
+                    .Select(
+                        subFileInfo =>
+                        new IoFile(
+                            true,
+                            subFileInfo.Name,
+                            subFileInfo.Length,
+                            GetRelativePath(subFileInfo.FullName),
+                            subFileInfo.FullName
+                        )
                     )
                 );
 
-            var ioDirectoryItems = directoryInfo
-                .GetDirectories()
-                .ToList()
-                .Select(
-                    subDirectoryInfo =>
-                    new IoDirectory(
-                        true,
-                        subDirectoryInfo.Name,
-                        GetRelativePath(subDirectoryInfo.FullName),
-                        subDirectoryInfo.FullName,
-                        GetDirectoryItems(subDirectoryInfo.FullName)
+                subItems.AddRange(directoryInfo
+                    .GetDirectories()
+                    .ToList()
+                    .Select(
+                        subDirectoryInfo =>
+                        new IoDirectory(
+                            true,
+                            subDirectoryInfo.Name,
+                            GetRelativePath(subDirectoryInfo.FullName),
+                            subDirectoryInfo.FullName,
+                            GetDirectoryItems(subDirectoryInfo.FullName)
+                        )
                     )
                 );
-
-            return ioFileItems.OfType<IIoItem>().Concat(ioDirectoryItems);
+            }
+            catch (UnauthorizedAccessException unauthorizedAccessException)
+            {
+                return subItems;
+            }
+            
+            return subItems;
         }
     }
 }
