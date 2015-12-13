@@ -4,15 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72A36B70-63ED-4FBF-9DF9-750F3A669E6F}</ProjectGuid>
+    <ProjectGuid>{8F01EB88-A315-4DFB-AB31-DE45639EE25D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DirectoryCompareEngine</RootNamespace>
-    <AssemblyName>DirectoryCompareEngine</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>DirectoryCompareModellingLib</RootNamespace>
+    <AssemblyName>DirectoryCompareModellingLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,14 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NSubstitute">
-      <HintPath>..\packages\NSubstitute.1.9.2.0\lib\net45\NSubstitute.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,33 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultWiringModule.cs" />
+    <Compile Include="GeneratedCode\DirectoryCompareEngine\Services\Files\IComparisonItem.cs" />
+    <Compile Include="GeneratedCode\DirectoryCompareEngine\Services\Files\IIoDirectory.cs" />
+    <Compile Include="GeneratedCode\DirectoryCompareEngine\Services\Files\IIoFile.cs" />
+    <Compile Include="GeneratedCode\DirectoryCompareEngine\Services\Files\IIoItem.cs" />
+    <Compile Include="GeneratedCode\DirectoryCompareEngine\Services\Files\IIoProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Files\Factories\Interfaces\IIoProviderFactory.cs" />
-    <Compile Include="Services\Files\Factories\Interfaces\ILocalIoProviderFactory.cs" />
-    <Compile Include="Services\Files\Factories\LocalIoProviderFactory.cs" />
-    <Compile Include="Services\Files\Interfaces\IComparisonItem.cs" />
-    <Compile Include="Services\Files\Interfaces\ILocalIoProvider.cs" />
-    <Compile Include="Services\Files\Interfaces\IIoDirectory.cs" />
-    <Compile Include="Services\Files\Interfaces\IIoFile.cs" />
-    <Compile Include="Services\Files\Interfaces\IIoItem.cs" />
-    <Compile Include="Services\Files\Interfaces\IIoProvider.cs" />
-    <Compile Include="Services\Files\IoDirectory.cs" />
-    <Compile Include="Services\Files\IoFile.cs" />
-    <Compile Include="Services\Files\LocalIoProvider.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="FodyWeavers.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

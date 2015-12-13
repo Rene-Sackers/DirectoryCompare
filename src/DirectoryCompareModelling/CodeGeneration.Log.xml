@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-12-13T12:08:24" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="ProjectPath = ..\DirectoryCompareEngine\DirectoryCompareEngine.csproj" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="TargetDirectory = {PackageStructure}" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="DirectoryCompareModelling's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'DirectoryCompareModelling::Services::Files::IComparisonItem' -  (Interface), 'DirectoryCompareModelling::Services::Files::IIoProvider' -  (Interface), 'DirectoryCompareModelling::Services::Files::IIoItem' -  (Interface), 'DirectoryCompareModelling::Services::Files::IIoFile' -  (Interface), 'DirectoryCompareModelling::Services::Files::IIoDirectory' -  (Interface) " />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="'DirectoryCompareModelling::Services::Files::IComparisonItem' -  (Interface) : success (file replaced) - C:\Users\renes\Documents\GitHub\DirectoryCompare\src\DirectoryCompareEngine\Services\Files\IComparisonItem.cs" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="'DirectoryCompareModelling::Services::Files::IIoProvider' -  (Interface) : success (file replaced) - C:\Users\renes\Documents\GitHub\DirectoryCompare\src\DirectoryCompareEngine\Services\Files\IIoProvider.cs" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="'DirectoryCompareModelling::Services::Files::IIoItem' -  (Interface) : success (file replaced) - C:\Users\renes\Documents\GitHub\DirectoryCompare\src\DirectoryCompareEngine\Services\Files\IIoItem.cs" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="'DirectoryCompareModelling::Services::Files::IIoFile' -  (Interface) : success (file replaced) - C:\Users\renes\Documents\GitHub\DirectoryCompare\src\DirectoryCompareEngine\Services\Files\IIoFile.cs" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Medium" Text="'DirectoryCompareModelling::Services::Files::IIoDirectory' -  (Interface) : success (file replaced) - C:\Users\renes\Documents\GitHub\DirectoryCompare\src\DirectoryCompareEngine\Services\Files\IIoDirectory.cs" />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="The selection included 9 elements which were not bound to a template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files::' -  (Association): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files::' -  (Association): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files::' -  (Association): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services' -  (Package): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files' -  (Package): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files::' -  (Association): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'0e90461a-7af0-4b69-9403-e6e40e30b38c' -  (Generalization): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'DirectoryCompareModelling::Services::Files::' -  (Association): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="Diagnostic" Text="'8bf45bc2-5379-4d9e-b96e-85bab1575cf3' -  (Generalization): no bound template." />
+  <Message Timestamp="2015-12-13T12:08:25" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
